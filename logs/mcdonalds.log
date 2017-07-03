@@ -1,0 +1,1075 @@
+[INFO] [2017-07-0309:38:26][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0309:38:26][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0309:38:26][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeord9p1ox2ksz20fde|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeord9p1ox2ksz20fde|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[WARN] [2017-07-0309:38:46][com.mchange.v2.async.ThreadPoolAsynchronousRunner]com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@19c0e2e -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+[WARN] [2017-07-0309:38:46][com.mchange.v2.async.ThreadPoolAsynchronousRunner]com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@19c0e2e -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@66f956 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@17270ca (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1fa2ed2 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@104f9e6
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@490619
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1d43a
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@3bf716
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f2be
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@75ce9
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@23ee97
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+		java.net.PlainSocketImpl.connect(Unknown Source)
+		java.net.SocksSocketImpl.connect(Unknown Source)
+		java.net.Socket.connect(Unknown Source)
+		oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:161)
+		oracle.net.nt.ConnOption.connect(ConnOption.java:159)
+		oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:428)
+		oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:506)
+		oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:595)
+		oracle.net.ns.NSProtocol.connect(NSProtocol.java:230)
+		oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1452)
+		oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:496)
+		oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+		oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+		oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+		java.net.PlainSocketImpl.connect(Unknown Source)
+		java.net.SocksSocketImpl.connect(Unknown Source)
+		java.net.Socket.connect(Unknown Source)
+		oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:161)
+		oracle.net.nt.ConnOption.connect(ConnOption.java:159)
+		oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:428)
+		oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:506)
+		oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:595)
+		oracle.net.ns.NSProtocol.connect(NSProtocol.java:230)
+		oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1452)
+		oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:496)
+		oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+		oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+		oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+		java.net.PlainSocketImpl.connect(Unknown Source)
+		java.net.SocksSocketImpl.connect(Unknown Source)
+		java.net.Socket.connect(Unknown Source)
+		oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:161)
+		oracle.net.nt.ConnOption.connect(ConnOption.java:159)
+		oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:428)
+		oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:506)
+		oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:595)
+		oracle.net.ns.NSProtocol.connect(NSProtocol.java:230)
+		oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1452)
+		oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:496)
+		oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+		oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+		oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+[INFO] [2017-07-0309:39:23][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0309:39:24][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0309:39:24][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeord9p1oyaz26hj5ao|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeord9p1oyaz26hj5ao|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[WARN] [2017-07-0309:39:44][com.mchange.v2.async.ThreadPoolAsynchronousRunner]com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@e5f201 -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+[WARN] [2017-07-0309:39:44][com.mchange.v2.async.ThreadPoolAsynchronousRunner]com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@e5f201 -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@11f0496 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@53904e (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@8cbd8f (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@2a77fe
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@130fbd9
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@19dcd51
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f060a8
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@12e7bcf
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@17ea640
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@2203fb
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+		java.net.PlainSocketImpl.connect(Unknown Source)
+		java.net.SocksSocketImpl.connect(Unknown Source)
+		java.net.Socket.connect(Unknown Source)
+		oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:161)
+		oracle.net.nt.ConnOption.connect(ConnOption.java:159)
+		oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:428)
+		oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:506)
+		oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:595)
+		oracle.net.ns.NSProtocol.connect(NSProtocol.java:230)
+		oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1452)
+		oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:496)
+		oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+		oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+		oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+		java.net.PlainSocketImpl.connect(Unknown Source)
+		java.net.SocksSocketImpl.connect(Unknown Source)
+		java.net.Socket.connect(Unknown Source)
+		oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:161)
+		oracle.net.nt.ConnOption.connect(ConnOption.java:159)
+		oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:428)
+		oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:506)
+		oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:595)
+		oracle.net.ns.NSProtocol.connect(NSProtocol.java:230)
+		oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1452)
+		oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:496)
+		oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+		oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+		oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+		java.net.PlainSocketImpl.connect(Unknown Source)
+		java.net.SocksSocketImpl.connect(Unknown Source)
+		java.net.Socket.connect(Unknown Source)
+		oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:161)
+		oracle.net.nt.ConnOption.connect(ConnOption.java:159)
+		oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:428)
+		oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:506)
+		oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:595)
+		oracle.net.ns.NSProtocol.connect(NSProtocol.java:230)
+		oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1452)
+		oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:496)
+		oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+		oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+		oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+[INFO] [2017-07-0309:44:57][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0309:44:57][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0309:44:57][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeord9p1p5ggjmidky3|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeord9p1p5ggjmidky3|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[WARN] [2017-07-0309:45:17][com.mchange.v2.async.ThreadPoolAsynchronousRunner]com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@16a87be -- APPARENT DEADLOCK!!! Creating emergency threads for unassigned pending tasks!
+[WARN] [2017-07-0309:45:17][com.mchange.v2.async.ThreadPoolAsynchronousRunner]com.mchange.v2.async.ThreadPoolAsynchronousRunner$DeadlockDetector@16a87be -- APPARENT DEADLOCK!!! Complete Status: 
+	Managed Threads: 3
+	Active Threads: 3
+	Active Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@907158 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1864ac3 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1004cb3 (com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2)
+	Pending Tasks: 
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1fc2981
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@bf8e17
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1c60bd1
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@caa8ce
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f82637
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@f1d009
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask@1cadc85
+Pool thread stack traces:
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#2,5,main]
+		java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+		java.net.PlainSocketImpl.connect(Unknown Source)
+		java.net.SocksSocketImpl.connect(Unknown Source)
+		java.net.Socket.connect(Unknown Source)
+		oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:161)
+		oracle.net.nt.ConnOption.connect(ConnOption.java:159)
+		oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:428)
+		oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:506)
+		oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:595)
+		oracle.net.ns.NSProtocol.connect(NSProtocol.java:230)
+		oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1452)
+		oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:496)
+		oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+		oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+		oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#1,5,main]
+		java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+		java.net.PlainSocketImpl.connect(Unknown Source)
+		java.net.SocksSocketImpl.connect(Unknown Source)
+		java.net.Socket.connect(Unknown Source)
+		oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:161)
+		oracle.net.nt.ConnOption.connect(ConnOption.java:159)
+		oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:428)
+		oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:506)
+		oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:595)
+		oracle.net.ns.NSProtocol.connect(NSProtocol.java:230)
+		oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1452)
+		oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:496)
+		oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+		oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+		oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+	Thread[com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread-#0,5,main]
+		java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+		java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+		java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+		java.net.PlainSocketImpl.connect(Unknown Source)
+		java.net.SocksSocketImpl.connect(Unknown Source)
+		java.net.Socket.connect(Unknown Source)
+		oracle.net.nt.TcpNTAdapter.connect(TcpNTAdapter.java:161)
+		oracle.net.nt.ConnOption.connect(ConnOption.java:159)
+		oracle.net.nt.ConnStrategy.execute(ConnStrategy.java:428)
+		oracle.net.resolver.AddrResolution.resolveAndExecute(AddrResolution.java:506)
+		oracle.net.ns.NSProtocol.establishConnection(NSProtocol.java:595)
+		oracle.net.ns.NSProtocol.connect(NSProtocol.java:230)
+		oracle.jdbc.driver.T4CConnection.connect(T4CConnection.java:1452)
+		oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:496)
+		oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:666)
+		oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:32)
+		oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:566)
+		com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:134)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:182)
+		com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:171)
+		com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:137)
+		com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1014)
+		com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:32)
+		com.mchange.v2.resourcepool.BasicResourcePool$AcquireTask.run(BasicResourcePool.java:1810)
+		com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+
+
+[INFO] [2017-07-0309:50:21][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0309:50:21][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0309:50:21][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1pcee7q1g5zz|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1pcee7q1g5zz|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0309:54:00][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0309:54:01][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0309:54:01][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1ph3tzc9i5v4|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1ph3tzc9i5v4|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:26:47][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:26:48][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:26:48][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1qn9l1las2ic|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1qn9l1las2ic|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:27:56][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] The following Exceptions occurred while trying to clean up a Connection's stranded resources:
+[INFO] [2017-07-0310:27:56][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0 -- conection resource close Exception]
+java.sql.SQLRecoverableException: 关闭的连接
+	at oracle.jdbc.driver.PhysicalConnection.needLine(PhysicalConnection.java:4220)
+	at oracle.jdbc.driver.OracleStatement.closeOrCache(OracleStatement.java:1431)
+	at oracle.jdbc.driver.OracleStatement.close(OracleStatement.java:1410)
+	at oracle.jdbc.driver.OracleStatementWrapper.close(OracleStatementWrapper.java:102)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.close(OraclePreparedStatementWrapper.java:82)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.cleanupUncachedStatements(NewPooledConnection.java:651)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.markClosedProxyConnection(NewPooledConnection.java:346)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.close(NewProxyConnection.java:1246)
+	at com.jfinal.plugin.activerecord.Config.close(Config.java:242)
+	at com.jfinal.plugin.activerecord.DbPro.save(DbPro.java:642)
+	at com.jfinal.plugin.activerecord.DbPro.save(DbPro.java:650)
+	at com.jfinal.plugin.activerecord.Db.save(Db.java:405)
+	at org.aisino.execute.UserImport.exe2(UserImport.java:139)
+	at org.aisino.execute.UserImport.exe(UserImport.java:57)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:140)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:122)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:113)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+[ERROR] [2017-07-0310:27:56][org.aisino.swing.NewPanel]Class = org.aisino.swing.NewPanel; ErrorMessage = java.sql.SQLRecoverableException: IO 错误: Software caused connection abort: recv failed.
+[INFO] [2017-07-0310:28:03][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[INFO] [2017-07-0310:28:03][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[INFO] [2017-07-0310:28:03][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[INFO] [2017-07-0310:28:03][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[WARN] [2017-07-0310:28:03][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@1f2f2b4
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@1f2f2b4
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[WARN] [2017-07-0310:28:03][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@55ff3f
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@55ff3f
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[INFO] [2017-07-0310:28:03][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[INFO] [2017-07-0310:28:03][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[INFO] [2017-07-0310:28:03][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[WARN] [2017-07-0310:28:03][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@607507
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@607507
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[INFO] [2017-07-0310:28:03][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[INFO] [2017-07-0310:28:03][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[WARN] [2017-07-0310:28:03][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@13b0a97
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@13b0a97
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[INFO] [2017-07-0310:28:03][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[WARN] [2017-07-0310:28:03][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@4c9177
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@4c9177
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[INFO] [2017-07-0310:31:25][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:31:26][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:31:26][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a10629p1qt7wn5llt6d|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a10629p1qt7wn5llt6d|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[WARN] [2017-07-0310:31:37][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+[WARN] [2017-07-0310:31:37][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Another error has occurred [ java.sql.SQLRecoverableException: 关闭的连接 ] which will not be reported to listeners!
+java.sql.SQLRecoverableException: 关闭的连接
+	at oracle.jdbc.driver.PhysicalConnection.getAutoCommit(PhysicalConnection.java:2254)
+	at oracle.jdbc.driver.PhysicalConnection.rollback(PhysicalConnection.java:2424)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.rollback(NewProxyConnection.java:855)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:767)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:55)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:140)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:122)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:113)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+[WARN] [2017-07-0310:31:37][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+[WARN] [2017-07-0310:31:37][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Another error has occurred [ java.sql.SQLRecoverableException: 关闭的连接 ] which will not be reported to listeners!
+java.sql.SQLRecoverableException: 关闭的连接
+	at oracle.jdbc.driver.PhysicalConnection.getAutoCommit(PhysicalConnection.java:2254)
+	at oracle.jdbc.driver.PhysicalConnection.rollback(PhysicalConnection.java:2424)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.rollback(NewProxyConnection.java:855)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:774)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:55)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:140)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:122)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:113)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+[ERROR] [2017-07-0310:31:37][com.jfinal.kit.LogKit]关闭的连接
+java.sql.SQLRecoverableException: 关闭的连接
+	at oracle.jdbc.driver.PhysicalConnection.getAutoCommit(PhysicalConnection.java:2254)
+	at oracle.jdbc.driver.PhysicalConnection.rollback(PhysicalConnection.java:2424)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.rollback(NewProxyConnection.java:855)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:774)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:55)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:140)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:122)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:113)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+[WARN] [2017-07-0310:31:37][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+[WARN] [2017-07-0310:31:37][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Another error has occurred [ java.sql.SQLRecoverableException: 关闭的连接 ] which will not be reported to listeners!
+java.sql.SQLRecoverableException: 关闭的连接
+	at oracle.jdbc.driver.PhysicalConnection.setAutoCommit(PhysicalConnection.java:2232)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setAutoCommit(NewProxyConnection.java:881)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:780)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:55)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:140)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:122)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:113)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+[ERROR] [2017-07-0310:31:37][com.jfinal.kit.LogKit]关闭的连接
+java.sql.SQLRecoverableException: 关闭的连接
+	at oracle.jdbc.driver.PhysicalConnection.setAutoCommit(PhysicalConnection.java:2232)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setAutoCommit(NewProxyConnection.java:881)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:780)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:55)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:140)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:122)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:113)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+[ERROR] [2017-07-0310:31:37][org.aisino.swing.NewPanel]Class = org.aisino.swing.NewPanel; ErrorMessage = java.sql.SQLRecoverableException: 关闭的连接.
+[INFO] [2017-07-0310:33:46][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:33:47][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:33:47][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a10649p1qw8sb1c3a6uv|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a10649p1qw8sb1c3a6uv|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[WARN] [2017-07-0310:34:12][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@230092
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@230092
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[WARN] [2017-07-0310:34:12][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@af9fcc
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@af9fcc
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[WARN] [2017-07-0310:34:12][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@1842362
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@1842362
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[WARN] [2017-07-0310:34:12][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@632f0e
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@632f0e
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[WARN] [2017-07-0310:34:12][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@918eda
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@918eda
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[WARN] [2017-07-0310:34:12][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@e249e6
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@e249e6
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] Exceptions occurred while trying to close a PooledConnection's resources normally.
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[INFO] [2017-07-0310:34:12][com.mchange.v2.c3p0.impl.NewPooledConnection][c3p0] NewPooledConnection close Exception.
+java.sql.SQLRecoverableException: IO 错误: Connection reset by peer: socket write error
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:857)
+	at oracle.jdbc.driver.PhysicalConnection.close(PhysicalConnection.java:2502)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:549)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at oracle.net.ns.DataPacket.send(DataPacket.java:209)
+	at oracle.net.ns.NetOutputStream.flush(NetOutputStream.java:215)
+	at oracle.net.ns.NetInputStream.getNextPacket(NetInputStream.java:302)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:249)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:171)
+	at oracle.net.ns.NetInputStream.read(NetInputStream.java:89)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.readNextPacket(T4CSocketInputStreamWrapper.java:123)
+	at oracle.jdbc.driver.T4CSocketInputStreamWrapper.read(T4CSocketInputStreamWrapper.java:79)
+	at oracle.jdbc.driver.T4CMAREngineStream.unmarshalUB1(T4CMAREngineStream.java:429)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:397)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:257)
+	at oracle.jdbc.driver.T4C7Ocommoncall.doOLOGOFF(T4C7Ocommoncall.java:59)
+	at oracle.jdbc.driver.T4CConnection.logoff(T4CConnection.java:844)
+	... 6 more
+[WARN] [2017-07-0310:34:12][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@9c5841
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@9c5841
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[WARN] [2017-07-0310:34:12][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@1f46e07
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@1f46e07
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[WARN] [2017-07-0310:34:12][com.mchange.v2.resourcepool.BasicResourcePool]Failed to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@1732587
+java.sql.SQLException: Some resources failed to close properly while closing com.mchange.v2.c3p0.impl.NewPooledConnection@1732587
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:571)
+	at com.mchange.v2.c3p0.impl.NewPooledConnection.close(NewPooledConnection.java:234)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.destroyResource(C3P0PooledConnectionPool.java:470)
+	at com.mchange.v2.resourcepool.BasicResourcePool$1DestroyResourceTask.run(BasicResourcePool.java:964)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:547)
+[INFO] [2017-07-0310:35:11][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:35:11][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:35:11][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105n9p1qy1vq1cldizw|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105n9p1qy1vq1cldizw|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:36:17][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:36:17][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:36:17][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1qzgtt1a59qdr|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1qzgtt1a59qdr|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:40:57][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:40:58][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:40:58][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1r5h9ozy8550|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1r5h9ozy8550|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:41:34][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:41:35][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:41:35][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1r69x41wxqnk0|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1r69x41wxqnk0|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:42:00][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:42:01][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:42:01][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1r6tv31fh5sbk|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1r6tv31fh5sbk|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:44:07][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:44:08][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:44:08][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1r9jvda33oqx|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1r9jvda33oqx|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:48:11][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:48:12][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:48:12][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1res951r7mzfc|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1res951r7mzfc|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:49:38][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:49:39][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:49:39][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1rgnd0cjxmiy|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1rgnd0cjxmiy|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:50:04][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:50:04][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:50:04][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1rh74m1csqq1r|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1rh74m1csqq1r|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:52:05][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:52:06][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:52:06][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1rjsmy1mia52o|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1rjsmy1mia52o|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:53:20][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:53:21][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:53:21][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1rleit1gv0tm3|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1rleit1gv0tm3|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:53:54][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:53:55][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:53:55][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1rm4up1fhxlv2|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1rm4up1fhxlv2|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:57:46][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:57:46][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:57:47][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1rr3p6lb0wuu|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1rr3p6lb0wuu|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0310:58:53][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0310:58:53][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0310:58:53][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1rsiy81bqs1et|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1rsiy81bqs1et|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0313:09:53][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0313:09:53][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0313:09:53][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1wgzvekiaufr|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1wgzvekiaufr|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0313:10:36][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0313:10:36][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0313:10:36][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1whx2jj0ez0k|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1whx2jj0ez0k|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0313:12:25][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0313:12:25][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0313:12:25][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1wk9791ouzf5u|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1wk9791ouzf5u|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[ERROR] [2017-07-0313:13:07][org.aisino.swing.NewPanel]Class = org.aisino.swing.NewPanel; ErrorMessage = 请导入正确的[Excel]件!.
+[INFO] [2017-07-0313:15:07][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0313:15:07][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0313:15:07][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1wnq4j1x40ku1|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1wnq4j1x40ku1|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[ERROR] [2017-07-0313:15:15][org.aisino.swing.NewPanel]Class = org.aisino.swing.NewPanel; ErrorMessage = 请导入正确的[Excel]文件!.
+[INFO] [2017-07-0313:24:16][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0313:24:16][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0313:24:16][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1wzhql1sxnizh|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1wzhql1sxnizh|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[ERROR] [2017-07-0313:24:54][org.aisino.swing.NewPanel]Class = org.aisino.swing.NewPanel; ErrorMessage = 请导入正确的[Excel]文件!.
+[INFO] [2017-07-0313:27:20][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0313:27:20][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0313:27:20][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1x3fwo1r1yult|80a178, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1x3fwo1r1yult|80a178, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[ERROR] [2017-07-0313:27:34][com.jfinal.kit.LogKit]自动提交功能设置为启用时无法回退
+java.sql.SQLException: 自动提交功能设置为启用时无法回退
+	at oracle.jdbc.driver.PhysicalConnection.rollback(PhysicalConnection.java:2427)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.rollback(NewProxyConnection.java:855)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:774)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:55)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:142)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:124)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:115)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+[ERROR] [2017-07-0313:27:34][org.aisino.swing.NewPanel]com.jfinal.plugin.activerecord.ActiveRecordException: java.sql.SQLException: 仅 READ_COMMITTED 和 SERIALIZABLE 是有效的事务处理级
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:775)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:55)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:142)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:124)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:115)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+Caused by: java.sql.SQLException: 仅 READ_COMMITTED 和 SERIALIZABLE 是有效的事务处理级
+	at oracle.jdbc.driver.PhysicalConnection.setTransactionIsolation(PhysicalConnection.java:3301)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.setTransactionIsolation(NewProxyConnection.java:701)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:761)
+	... 8 more
+
+[INFO] [2017-07-0313:28:14][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0313:28:15][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0313:28:15][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1x4m2b1yxny6r|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1x4m2b1yxny6r|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:00:11][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:00:12][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:00:12][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1y9p011j5125h|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1y9p011j5125h|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:00:51][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:00:52][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:00:52][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1yajup1n0jebj|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1yajup1n0jebj|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:09:34][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:09:34][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:09:34][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1ylqxt1tdawx7|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1ylqxt1tdawx7|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:13:52][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:13:52][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:13:52][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1yra8vgp8c3b|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1yra8vgp8c3b|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:16:15][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:16:15][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:16:15][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1yucfy226ycu|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1yucfy226ycu|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:20:17][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:20:17][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:20:17][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1yzj1a2xt6fs|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1yzj1a2xt6fs|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:25:10][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:25:10][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:25:10][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105q9p1z5tdqdybesr|1591d15, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105q9p1z5tdqdybesr|1591d15, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:57:03][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:57:03][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:57:03][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105z9p20atsqu7qmib|193948d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105z9p20atsqu7qmib|193948d, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:57:24][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:57:25][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:57:25][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105z9p20ba55md1hoz|193948d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105z9p20ba55md1hoz|193948d, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:57:58][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:57:58][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:57:58][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105z9p20bzzb154f65e|193948d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105z9p20bzzb154f65e|193948d, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:58:12][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:58:12][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:58:12][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105z9p20caj5ow0bkk|193948d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105z9p20caj5ow0bkk|193948d, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:58:19][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:58:19][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:58:19][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105z9p20cgcyjkr7eu|193948d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105z9p20cgcyjkr7eu|193948d, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:58:35][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:58:35][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:58:35][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105z9p20cs9i103i2oj|193948d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105z9p20cs9i103i2oj|193948d, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:58:45][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:58:45][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:58:45][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105z9p20d08sy5ha4i|193948d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105z9p20d08sy5ha4i|193948d, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:59:22][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-0314:59:22][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-0314:59:22][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105z9p20dsob1p2xwi|193948d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105z9p20dsob1p2xwi|193948d, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.8.12:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-0314:59:46][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '1000003'
+[INFO] [2017-07-0314:59:46][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '1000004'
+[INFO] [2017-07-0314:59:46][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '1000001'
+[INFO] [2017-07-0314:59:46][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '1000002'
+[INFO] [2017-07-0315:01:03][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000008'
+[INFO] [2017-07-0315:01:03][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000007'
+[INFO] [2017-07-0315:01:03][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000009'
+[INFO] [2017-07-0315:01:03][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000004'
+[INFO] [2017-07-0315:01:03][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000003'
+[INFO] [2017-07-0315:01:04][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000006'
+[INFO] [2017-07-0315:01:04][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000005'
+[INFO] [2017-07-0315:01:04][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000011'
+[INFO] [2017-07-0315:01:04][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000010'
+[INFO] [2017-07-0315:01:04][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000002'
+[INFO] [2017-07-0315:01:04][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000013'
+[INFO] [2017-07-0315:01:04][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000001'
+[INFO] [2017-07-0315:01:04][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '5000012'
