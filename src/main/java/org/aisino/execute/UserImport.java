@@ -1,8 +1,5 @@
 package org.aisino.execute;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -29,10 +26,7 @@ import org.aisino.util.OrgTools;
 import org.aisino.util.ReadExcel;
 import org.apache.log4j.Logger;
 
-import com.jfinal.kit.Prop;
-import com.jfinal.kit.PropKit;
 import com.jfinal.plugin.activerecord.Db;
-import com.jfinal.plugin.activerecord.DbKit;
 import com.jfinal.plugin.activerecord.IAtom;
 import com.jfinal.plugin.activerecord.Record;
 
@@ -50,9 +44,9 @@ public class UserImport {
 
 	public static final String SEPARATIONLINE = "********************";
 
-	public void exe(final String filename) throws Exception {
+	public boolean exe(final String filename) {
 		// 事务
-		Db.tx(new IAtom() {
+		return Db.tx(new IAtom() {
 			
 			@Override
 			public boolean run() {

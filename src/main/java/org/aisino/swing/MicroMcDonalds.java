@@ -32,14 +32,14 @@ public class MicroMcDonalds extends JFrame {
 
 	private static void os() {
 
-		InitGlobalFont(new Font("黑体", Font.PLAIN, 10));
+		InitGlobalFont(new Font("微软雅黑", Font.PLAIN, 10));
 		try {
 			org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper.launchBeautyEyeLNF();
 			BeautyEyeLNFHelper.frameBorderStyle = BeautyEyeLNFHelper.FrameBorderStyle.translucencySmallShadow;
 			org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper.launchBeautyEyeLNF();
 			UIManager.put("RootPane.setupButtonVisible", false);
-			// BeautyEyeLNFHelper.translucencyAtFrameInactive = false;
-			// UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+//			 BeautyEyeLNFHelper.translucencyAtFrameInactive = false;
+//			 UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e) {
 			System.err.println("set skin fail!");
 		}
@@ -57,14 +57,14 @@ public class MicroMcDonalds extends JFrame {
 	}
 
 	public static void main(String[] args) {
-os();
+		os();
 		init();
 		setOSStyle();
 
 		MicroMcDonalds demo = new MicroMcDonalds();
 		demo.setSize(SCREENWIDTH, SCREENHEIGHT);
 		demo.setLocationByPlatform(true);
-		demo.setTitle("麦当劳信息维护工具");
+		demo.setTitle("McDonalds");
 		demo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		demo.setLocationRelativeTo(null);
 		demo.setResizable(false);

@@ -139,9 +139,10 @@ public class NewPanel extends JPanel {
 		NewPanel.upBar();
 		if ((pathname.endsWith(".xls") || pathname.endsWith(".xlsx"))) {
 			try {
-				new UserImport().exe(pathname);
-				Desktop.getDesktop().open(new File("result.txt"));
-				setBarProgressValue(100);
+				if (new UserImport().exe(pathname)) {
+					Desktop.getDesktop().open(new File("result.txt"));
+					setBarProgressValue(100);
+				}
 			} catch (Exception e1) {
 				e1.printStackTrace();
 				LogUtil.logPrint(NewPanel.area, log, NewPanel.class, e1);
