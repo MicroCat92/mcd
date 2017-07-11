@@ -1,0 +1,29 @@
+--- McDonalds User HISTORY ---
+--- 	  VERSION 1.0  	   ---
+
+
+
+ ----------      新增加的用户名密码信息(对已存在的用户的密码不做更新)      ---------- 
+ ----------                      2017-07-07  14:17:09                      ---------- 
+cn-1400362inv	E140@0362#inv
+cn-1400383inv	E140@0383#inv
+cn-1400384inv	E140@0384#inv
+cn-1400385inv	E140@0385#inv
+cn-1410180inv	E141@0180#inv
+cn-1400362invkio	I6;ww`)g
+cn-1400383invkio	Q6un1'*P
+cn-1400384invkio	J5uhau!a
+cn-1400385invkio	N0Bu_U&S
+cn-1410180invkio	O6\xzG/&
+cn-1400362invrob	Y9BsK8%9
+cn-1400383invrob	V6Wlx!,-
+cn-1400384invrob	O92v7z%9
+cn-1400385invrob	E1>zKr.k
+cn-1410180invrob	N6$t@n,K
+
+
+ ----------      新增加的用户名密码信息(对已存在的用户的密码不做更新)      ---------- 
+ ----------                      2017-07-10  15:05:39                      ---------- 
+cn-1400383inv	E140@0383#inv
+cn-1400383invkio	M06n,\&W
+cn-1400383invrob	I6sm5&%L

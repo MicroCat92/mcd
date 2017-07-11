@@ -4,7 +4,16 @@ import java.awt.BorderLayout;
 import java.awt.Desktop;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Timer;
@@ -141,6 +150,7 @@ public class NewPanel extends JPanel {
 			try {
 				if (new UserImport().exe(pathname)) {
 					Desktop.getDesktop().open(new File("result.txt"));
+					addToHistory();
 					setBarProgressValue(100);
 				}
 			} catch (Exception e1) {
@@ -149,6 +159,50 @@ public class NewPanel extends JPanel {
 			}
 		} else {
 			LogUtil.logPrint(NewPanel.area, log, NewPanel.class, "请导入正确的[Excel]文件!");
+		}
+	}
+	
+	private static void addToHistory() {
+		// TODO Auto-generated method stub
+		FileInputStream fis = null;
+		FileOutputStream fos = null;
+		FileChannel resultChannel = null;
+		FileChannel historyChannel = null;
+		try {
+			fis = new FileInputStream(new File("result.txt"));
+			fos = new FileOutputStream(new File("history.txt"), true);
+			
+			fos.write("\n\n".getBytes("utf-8"));
+			fos.flush();
+			
+			resultChannel = fis.getChannel();
+			historyChannel = fos.getChannel();
+
+			resultChannel.transferTo(0, resultChannel.size(), historyChannel);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			try {
+				if (fis != null) {
+					fis.close();
+				}
+				if (fos != null) {
+					fos.close();
+				}
+				if(resultChannel != null) {
+					resultChannel.close();
+				}
+				if(historyChannel != null) {
+					historyChannel.close();
+				}
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 
