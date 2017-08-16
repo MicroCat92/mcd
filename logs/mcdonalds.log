@@ -1211,3 +1211,771 @@ Caused by: java.sql.SQLException: 仅 READ_COMMITTED 和 SERIALIZABLE 是有效�
 [INFO] [2017-07-1015:05:39][org.aisino.execute.UserImport]update sajt_user set login_pwd='A8B581FC57500E06CD2EDB62BB4D135A' where login_id='cn-1400383invkio'
 [INFO] [2017-07-1015:05:39][org.aisino.execute.UserImport]update sajt_user set login_pwd='E9693EC2B368C7E85A6748950BB4E9C9' where login_id='cn-1400383inv'
 [INFO] [2017-07-1015:05:39][org.aisino.execute.UserImport]update sajt_user set login_pwd='EF30AF8B44F0AD4A0BE1A997466C9AC7' where login_id='cn-1400383invrob'
+[INFO] [2017-07-1209:23:22][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-1209:23:23][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-1209:23:23][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105t9pejcdl3199e0r3|2f8f11, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105t9pejcdl3199e0r3|2f8f11, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-1209:23:53][org.aisino.execute.UserImport]update sajt_user set login_pwd='C0B939FB33AC6C603F7A98388308FC25' where login_id='cn-1450245inv'
+[INFO] [2017-07-1209:23:53][org.aisino.execute.UserImport]update sajt_user set login_pwd='0E564A48DE40AE3FDB326BC584256230' where login_id='cn-1450245invrob'
+[INFO] [2017-07-1209:23:53][org.aisino.execute.UserImport]update sajt_user set login_pwd='92E2592CC90EFF296434F71BC0D08F79' where login_id='cn-1450245invkio'
+[INFO] [2017-07-1213:06:36][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-1213:06:36][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-1213:06:36][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105t9perbfyj1g4w29|2f8f11, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105t9perbfyj1g4w29|2f8f11, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-1213:06:55][org.aisino.execute.UserImport]update sajt_user set login_pwd='BF8310266A9A8F94A5207B59720B2ECF' where login_id='cn-3230172invrob'
+[INFO] [2017-07-1213:06:55][org.aisino.execute.UserImport]update sajt_user set login_pwd='90AE4FCF3E2FF5B59D368E80C1DF13AE' where login_id='cn-3230172inv'
+[INFO] [2017-07-1213:06:55][org.aisino.execute.UserImport]update sajt_user set login_pwd='894DDF19CBDD335CA6006939D1724487' where login_id='cn-3230172invkio'
+[INFO] [2017-07-1213:07:38][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '3450038'
+[INFO] [2017-07-1213:07:38][org.aisino.execute.CloseShop]delete from sajt_org where org_no = '3450088'
+[INFO] [2017-07-1314:46:42][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-1314:46:43][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-1314:46:43][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a10619pgac1b7yf47co|2f8f11, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a10619pgac1b7yf47co|2f8f11, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-1314:47:06][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91370200614324499X'
+[INFO] [2017-07-1314:47:06][org.aisino.execute.UserImport]select * from sajt_org where org_no ='3350115'
+[INFO] [2017-07-1314:47:06][org.aisino.execute.UserImport]select * from sajt_org where org_no='3350115'
+[INFO] [2017-07-1314:47:06][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3350115invkio'
+[INFO] [2017-07-1314:47:06][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3350115inv'
+[INFO] [2017-07-1314:47:06][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3350115invrob'
+[INFO] [2017-07-1314:47:06][org.aisino.execute.UserImport]update sajt_user set login_pwd='6515E526CAC22066A429333A9308DCCD' where login_id='cn-3350115invkio'
+[INFO] [2017-07-1314:47:06][org.aisino.execute.UserImport]update sajt_user set login_pwd='46B1354ECA0623F2870C00AB82632A6F' where login_id='cn-3350115inv'
+[INFO] [2017-07-1314:47:06][org.aisino.execute.UserImport]update sajt_user set login_pwd='2A80839C3D3E6E158DD683018B34CA4F' where login_id='cn-3350115invrob'
+[INFO] [2017-07-1908:39:01][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-1908:39:02][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-1908:39:02][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105y9pohuas1ay6xnj|2f8f11, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105y9pohuas1ay6xnj|2f8f11, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-1908:39:48][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91440500079592458L'
+[INFO] [2017-07-1908:39:48][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='913700002671236326'
+[INFO] [2017-07-1908:39:48][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91610103726272187N'
+[INFO] [2017-07-1908:39:48][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1400382'
+[INFO] [2017-07-1908:39:48][org.aisino.execute.UserImport]select * from sajt_org where org_no ='3350110'
+[INFO] [2017-07-1908:39:48][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1960644'
+[INFO] [2017-07-1908:39:48][org.aisino.execute.UserImport]select * from sajt_org where org_no='1400382'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]select * from sajt_org where org_no='3350110'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]select * from sajt_org where org_no='1960644'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1960644invrob'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1400382invkio'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3350110inv'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1960644invkio'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1400382invrob'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1400382inv'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3350110invkio'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1960644inv'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3350110invrob'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]update sajt_user set login_pwd='EE4F5CFE0F21BD185BA3890F13B09E5E' where login_id='cn-1960644invrob'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]update sajt_user set login_pwd='B37AC2C7237848ABD68E7129D5D36D97' where login_id='cn-1400382invkio'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]update sajt_user set login_pwd='E288F4F3A0677973871F39DEEF97E495' where login_id='cn-3350110inv'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]update sajt_user set login_pwd='7994DBD7000F36996484869332A5E0E2' where login_id='cn-1960644invkio'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]update sajt_user set login_pwd='912D951143BA6470B71EDF2C0E5A8D64' where login_id='cn-1400382invrob'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]update sajt_user set login_pwd='D4A0D8F39B1E33DAED92499C7C5C3099' where login_id='cn-1400382inv'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]update sajt_user set login_pwd='53F549CC462BEF2ED38417ED252AAA92' where login_id='cn-3350110invkio'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]update sajt_user set login_pwd='BF6A538B2EB484DCC2C268E05DF198C5' where login_id='cn-1960644inv'
+[INFO] [2017-07-1908:39:49][org.aisino.execute.UserImport]update sajt_user set login_pwd='23EAA13B8EEEF4FA18D89BEADED70222' where login_id='cn-3350110invrob'
+[INFO] [2017-07-1908:48:54][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-1908:48:54][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-1908:48:54][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105y9poi70962ybn7q|2f8f11, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105y9poi70962ybn7q|2f8f11, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-2010:48:25][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2010:48:26][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2010:48:26][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9pq1wkarmvbrnr|2f8f11, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9pq1wkarmvbrnr|2f8f11, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-2010:49:00][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91440300618899062X'
+[INFO] [2017-07-2010:49:01][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420410'
+[INFO] [2017-07-2010:49:01][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420410'
+[INFO] [2017-07-2010:49:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420410invrob'
+[INFO] [2017-07-2010:49:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420410invkio'
+[INFO] [2017-07-2010:49:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420410inv'
+[INFO] [2017-07-2010:49:01][org.aisino.execute.UserImport]update sajt_user set login_pwd='DFF8359D2E21C389C58576DD0314BB20' where login_id='cn-1420410invrob'
+[INFO] [2017-07-2010:49:01][org.aisino.execute.UserImport]update sajt_user set login_pwd='2DF2EC10F56526B22196F97B0DB24BFD' where login_id='cn-1420410invkio'
+[INFO] [2017-07-2010:49:01][org.aisino.execute.UserImport]update sajt_user set login_pwd='BF29C87E65576161E50000BEFC3F539F' where login_id='cn-1420410inv'
+[INFO] [2017-07-2416:08:11][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2416:08:12][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2416:08:12][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9pw336s9to5tqe|2f8f11, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9pw336s9to5tqe|2f8f11, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[ERROR] [2017-07-2416:08:52][org.aisino.execute.UserImport]java.lang.NullPointerException
+	at org.aisino.util.ReadExcel.readXml(ReadExcel.java:107)
+	at org.aisino.execute.UserImport.exe2(UserImport.java:72)
+	at org.aisino.execute.UserImport.access$0(UserImport.java:68)
+	at org.aisino.execute.UserImport$1.run(UserImport.java:55)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:763)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:49)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:151)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:133)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:124)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+[ERROR] [2017-07-2416:10:39][org.aisino.execute.UserImport]java.lang.NullPointerException
+	at org.aisino.util.ReadExcel.readXml(ReadExcel.java:107)
+	at org.aisino.execute.UserImport.exe2(UserImport.java:72)
+	at org.aisino.execute.UserImport.access$0(UserImport.java:68)
+	at org.aisino.execute.UserImport$1.run(UserImport.java:55)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:763)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:49)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:151)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:133)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:124)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+java.lang.NullPointerException
+	at org.aisino.util.ReadExcel.readXml(ReadExcel.java:107)
+	at org.aisino.execute.UserImport.exe2(UserImport.java:72)
+	at org.aisino.execute.UserImport.access$0(UserImport.java:68)
+	at org.aisino.execute.UserImport$1.run(UserImport.java:55)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:763)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:49)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:151)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:133)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:124)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+[ERROR] [2017-07-2416:10:50][org.aisino.execute.UserImport]java.lang.NullPointerException
+	at org.aisino.util.ReadExcel.readXml(ReadExcel.java:107)
+	at org.aisino.execute.UserImport.exe2(UserImport.java:72)
+	at org.aisino.execute.UserImport.access$0(UserImport.java:68)
+	at org.aisino.execute.UserImport$1.run(UserImport.java:55)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:763)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:49)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:151)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:133)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:124)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+java.lang.NullPointerException
+	at org.aisino.util.ReadExcel.readXml(ReadExcel.java:107)
+	at org.aisino.execute.UserImport.exe2(UserImport.java:72)
+	at org.aisino.execute.UserImport.access$0(UserImport.java:68)
+	at org.aisino.execute.UserImport$1.run(UserImport.java:55)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:763)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:49)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:151)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:133)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:124)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+java.lang.NullPointerException
+	at org.aisino.util.ReadExcel.readXml(ReadExcel.java:107)
+	at org.aisino.execute.UserImport.exe2(UserImport.java:72)
+	at org.aisino.execute.UserImport.access$0(UserImport.java:68)
+	at org.aisino.execute.UserImport$1.run(UserImport.java:55)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:763)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:49)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:151)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:133)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:124)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+[INFO] [2017-07-2416:12:03][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2416:12:03][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2416:12:03][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9pw385qu15qkqex|dd0d4b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9pw385qu15qkqex|dd0d4b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[ERROR] [2017-07-2416:12:29][org.aisino.execute.UserImport]java.lang.NullPointerException
+	at org.aisino.util.ReadExcel.readXml(ReadExcel.java:107)
+	at org.aisino.execute.UserImport.exe2(UserImport.java:72)
+	at org.aisino.execute.UserImport.access$0(UserImport.java:68)
+	at org.aisino.execute.UserImport$1.run(UserImport.java:55)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:763)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:49)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:151)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:133)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:124)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+[INFO] [2017-07-2416:12:49][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2416:12:49][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2416:12:49][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9pw3953p1bvkzqa|127a732, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9pw3953p1bvkzqa|127a732, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-2416:14:19][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2416:14:19][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2416:14:19][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9pw3b2ut8p55o5|dd0d4b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9pw3b2ut8p55o5|dd0d4b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-2416:15:06][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2416:15:06][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2416:15:07][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9pw3c3a3pgrbwf|dd0d4b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9pw3c3a3pgrbwf|dd0d4b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-2416:17:04][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2416:17:04][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2416:17:04][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9pw3elzb1whwazc|dd0d4b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9pw3elzb1whwazc|dd0d4b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-2416:20:59][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2416:20:59][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2416:20:59][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9pw3jnlw1mb1h1i|2f8f11, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9pw3jnlw1mb1h1i|2f8f11, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[ERROR] [2017-07-2416:21:16][org.aisino.execute.UserImport]java.lang.NullPointerException
+	at org.aisino.util.ReadExcel.readXml(ReadExcel.java:107)
+	at org.aisino.execute.UserImport.exe2(UserImport.java:72)
+	at org.aisino.execute.UserImport.access$0(UserImport.java:68)
+	at org.aisino.execute.UserImport$1.run(UserImport.java:55)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:763)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:49)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:151)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:133)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:124)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+[INFO] [2017-07-2416:23:15][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91620100351389994B'
+[INFO] [2017-07-2416:23:15][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='9141010072184545XY'
+[INFO] [2017-07-2416:23:15][org.aisino.execute.UserImport]select * from sajt_org where org_no ='5170004'
+[INFO] [2017-07-2416:23:15][org.aisino.execute.UserImport]select * from sajt_org where org_no ='3560053'
+[INFO] [2017-07-2416:23:15][org.aisino.execute.UserImport]select * from sajt_org where org_no='5170004'
+[INFO] [2017-07-2416:23:15][org.aisino.execute.UserImport]select * from sajt_org where org_no='3560053'
+[INFO] [2017-07-2416:23:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3560053invrob'
+[INFO] [2017-07-2416:23:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3560053invkio'
+[INFO] [2017-07-2416:23:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-5170004invkio'
+[INFO] [2017-07-2416:23:16][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3560053inv'
+[INFO] [2017-07-2416:23:16][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-5170004inv'
+[INFO] [2017-07-2416:23:16][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-5170004invrob'
+[INFO] [2017-07-2416:23:16][org.aisino.execute.UserImport]update sajt_user set login_pwd='67A62B14D4476A185ACA6590192196E6' where login_id='cn-3560053invrob'
+[INFO] [2017-07-2416:23:16][org.aisino.execute.UserImport]update sajt_user set login_pwd='DFBD69E12DB032DD6796CB493876DF3D' where login_id='cn-3560053invkio'
+[INFO] [2017-07-2416:23:16][org.aisino.execute.UserImport]update sajt_user set login_pwd='021334A1832C8A99728AF9A80ABFEABC' where login_id='cn-5170004invkio'
+[INFO] [2017-07-2416:23:16][org.aisino.execute.UserImport]update sajt_user set login_pwd='4C54D9582CE7ECE209E903D7AF4CEB77' where login_id='cn-3560053inv'
+[INFO] [2017-07-2416:23:16][org.aisino.execute.UserImport]update sajt_user set login_pwd='DE7577D98D9AD94E3848D66EE33AC7C7' where login_id='cn-5170004inv'
+[INFO] [2017-07-2416:23:16][org.aisino.execute.UserImport]update sajt_user set login_pwd='D0AFD6A7D1290AA8AF17DF72967B6B76' where login_id='cn-5170004invrob'
+[INFO] [2017-07-2509:53:55][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2509:53:55][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2509:53:56][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgeord9px55qeyjvr721|dd0d4b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgeord9px55qeyjvr721|dd0d4b, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-2513:24:55][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2513:24:55][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2513:24:55][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9pxcp2tr1j1mjn4|2f8f11, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9pxcp2tr1j1mjn4|2f8f11, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-2513:25:27][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='913700002671236326'
+[INFO] [2017-07-2513:25:28][org.aisino.execute.UserImport]select * from sajt_org where org_no ='3350114'
+[INFO] [2017-07-2513:25:28][org.aisino.execute.UserImport]select * from sajt_org where org_no='3350114'
+[INFO] [2017-07-2513:25:28][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3350114inv'
+[INFO] [2017-07-2513:25:28][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3350114invkio'
+[INFO] [2017-07-2513:25:28][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3350114invrob'
+[INFO] [2017-07-2513:25:28][org.aisino.execute.UserImport]update sajt_user set login_pwd='E2681901EE8686964F33FE2CB4B998B7' where login_id='cn-3350114inv'
+[INFO] [2017-07-2513:25:28][org.aisino.execute.UserImport]update sajt_user set login_pwd='AE4BFF6FE76E46D3D4A68D4CD9DC429A' where login_id='cn-3350114invkio'
+[INFO] [2017-07-2513:25:28][org.aisino.execute.UserImport]update sajt_user set login_pwd='34026B7FAE1829A63B53E9674584D90A' where login_id='cn-3350114invrob'
+[INFO] [2017-07-2713:10:04][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2713:10:06][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2713:10:06][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1071p4b1azbvn6|2f8f11, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1071p4b1azbvn6|2f8f11, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-2713:11:32][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='913202146079206716'
+[INFO] [2017-07-2713:11:32][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1990183'
+[INFO] [2017-07-2713:11:32][org.aisino.execute.UserImport]select * from sajt_org where org_no='1990183'
+[INFO] [2017-07-2713:11:33][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1990183invkio'
+[INFO] [2017-07-2713:11:33][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1990183invrob'
+[INFO] [2017-07-2713:11:33][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1990183inv'
+[INFO] [2017-07-2713:11:33][org.aisino.execute.UserImport]update sajt_user set login_pwd='BD830FB2F907244AE746B6F29D3068BC' where login_id='cn-1990183invkio'
+[INFO] [2017-07-2713:11:33][org.aisino.execute.UserImport]update sajt_user set login_pwd='E05DC7C78DEE7803F63A9B280956ABD6' where login_id='cn-1990183invrob'
+[INFO] [2017-07-2713:11:33][org.aisino.execute.UserImport]update sajt_user set login_pwd='3EA437A4443DBCE80D6069D63C9A036B' where login_id='cn-1990183inv'
+[INFO] [2017-07-2810:20:43][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-2810:20:44][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-2810:20:44][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p11gfr82ygf3we|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p11gfr82ygf3we|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-2810:22:34][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91330000609104707W'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91330000609104707W'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]select * from sajt_org where org_no ='3330156'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]select * from sajt_org where org_no ='3330157'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]select * from sajt_org where org_no='3330156'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]select * from sajt_org where org_no='3330157'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3330157invkio'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3330157invrob'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3330156invkio'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3330157inv'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3330156invrob'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3330156inv'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]update sajt_user set login_pwd='495C795A80592E0F5F98FB17E085D523' where login_id='cn-3330157invkio'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]update sajt_user set login_pwd='1E0BE9CB7161D9D9E79F0A5CFD775335' where login_id='cn-3330157invrob'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]update sajt_user set login_pwd='1F7B095DA990BB010C615FB1219FD74C' where login_id='cn-3330156invkio'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]update sajt_user set login_pwd='340F3905829C01EDF8B865F1CAFD1052' where login_id='cn-3330157inv'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]update sajt_user set login_pwd='F2909BB3EC6BB135A1138BD0A57F7BED' where login_id='cn-3330156invrob'
+[INFO] [2017-07-2810:22:35][org.aisino.execute.UserImport]update sajt_user set login_pwd='08C8583150B3316851C073532A2B6657' where login_id='cn-3330156inv'
+[INFO] [2017-07-3113:29:50][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-3113:29:50][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-3113:29:50][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p15xii31g1sdpn|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p15xii31g1sdpn|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4UHKRU6L'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4UHHTQ8Y'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91440300MA5DJAAB20'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420160'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420047'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420335'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420160'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420047'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420335'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420160invrob'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420047invkio'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420335inv'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420335invkio'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420160invkio'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420160inv'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420047invrob'
+[INFO] [2017-07-3113:30:05][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420335invrob'
+[INFO] [2017-07-3113:30:06][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420047inv'
+[INFO] [2017-07-3113:30:06][org.aisino.execute.UserImport]update sajt_user set login_pwd='59EBCF2069C7701346EE49DBE421BEBD' where login_id='cn-1420160invrob'
+[INFO] [2017-07-3113:30:06][org.aisino.execute.UserImport]update sajt_user set login_pwd='6C3612E81A60FBCEC831A38FB842245E' where login_id='cn-1420047invkio'
+[INFO] [2017-07-3113:30:06][org.aisino.execute.UserImport]update sajt_user set login_pwd='95274113320FE8376658B0B906821002' where login_id='cn-1420160invkio'
+[INFO] [2017-07-3113:30:06][org.aisino.execute.UserImport]update sajt_user set login_pwd='DF1AB71C84A893B0C716FA185D9F24C6' where login_id='cn-1420160inv'
+[INFO] [2017-07-3113:30:06][org.aisino.execute.UserImport]update sajt_user set login_pwd='AD5E66D0DC1BE792998D05A73E9058E4' where login_id='cn-1420047invrob'
+[INFO] [2017-07-3113:30:06][org.aisino.execute.UserImport]update sajt_user set login_pwd='A300381563477122CEBEB83CD724A138' where login_id='cn-1420047inv'
+[INFO] [2017-07-3114:21:36][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-07-3114:21:36][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-07-3114:21:36][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p15zd34a1srm8jm|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p15zd34a1srm8jm|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4UHKRU6L'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4UHHTQ8Y'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91440300MA5DJAAB20'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420160'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420047'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420335'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420160'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420047'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420335'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420160invrob'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420047invkio'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420335inv'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420335invkio'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420160invkio'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420160inv'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420047invrob'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420335invrob'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420047inv'
+[INFO] [2017-07-3114:22:10][org.aisino.execute.UserImport]update sajt_user set login_pwd='55048CBA9823F3F58DC82807967A2971' where login_id='cn-1420335inv'
+[INFO] [2017-07-3114:22:11][org.aisino.execute.UserImport]update sajt_user set login_pwd='A3C0961A4970BEF31A8BDE7C1A2B99C8' where login_id='cn-1420335invkio'
+[INFO] [2017-07-3114:22:11][org.aisino.execute.UserImport]update sajt_user set login_pwd='9DB4B7BF76E5A81103426720B904955F' where login_id='cn-1420335invrob'
+[INFO] [2017-08-0214:11:18][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0214:11:18][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0214:11:18][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p18tvj74akg7kx|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p18tvj74akg7kx|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0214:11:28][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0214:11:28][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0214:11:28][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p18tvr9n7afri|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p18tvr9n7afri|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0214:12:19][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0214:12:19][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0214:12:19][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p18twul03r8mes|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p18twul03r8mes|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0214:13:01][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0214:13:01][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0214:13:02][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p18txr5byz6go9|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p18txr5byz6go9|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0214:45:55][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0214:45:55][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0214:45:55][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p18v42bur3wtlb|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p18v42bur3wtlb|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0214:46:05][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91440300618899062X'
+[INFO] [2017-08-0214:46:06][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900059977000U'
+[ERROR] [2017-08-0214:46:06][org.aisino.execute.UserImport]Class = org.aisino.execute.UserImport; ErrorMessage = 税号 91441900059977000U 未上线...
+[ERROR] [2017-08-0214:46:06][org.aisino.execute.UserImport]org.aisino.exception.NonExistentTaxcodeException
+	at org.aisino.execute.UserImport.exe2(UserImport.java:102)
+	at org.aisino.execute.UserImport.access$0(UserImport.java:68)
+	at org.aisino.execute.UserImport$1.run(UserImport.java:55)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:763)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:49)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:151)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:133)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:124)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+[INFO] [2017-08-0214:49:40][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0214:49:40][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0214:49:40][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p18v8vkb507sc8|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p18v8vkb507sc8|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0215:04:27][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0215:04:27][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0215:04:27][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p18vrw32xi0na|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p18vrw32xi0na|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0215:04:39][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91440300618899062X'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900059977000U'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='914419000585025640'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900351257393E'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91350500X1111306XP'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91340100713900105X'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420416'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420132'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420101'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420243'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1410184'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no ='3500053'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420416'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420132'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420101'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420243'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no='1410184'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_org where org_no='3500053'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420416invrob'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420132invrob'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3500053invrob'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420132invkio'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420101inv'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420416inv'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410184invrob'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410184inv'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3500053invkio'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420101invkio'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420243invrob'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420243inv'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420132inv'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3500053inv'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410184invkio'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420416invkio'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420101invrob'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420243invkio'
+[INFO] [2017-08-0215:04:40][org.aisino.execute.UserImport]update sajt_user set login_pwd='C463D91CBDE6F9E44089FA0144D8B0FE' where login_id='cn-1420416invrob'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='893EDA84F15DFEB59AE080DA0327F4E6' where login_id='cn-1420132invrob'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='9DD2A14C5F35F8349F24A6FAAEE5F582' where login_id='cn-3500053invrob'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='42564CA475CFDD7C411BFBA1E83E508E' where login_id='cn-1420132invkio'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='9B5EABB009DFF651A50315966EFE9837' where login_id='cn-1420101inv'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='90E119C8F5ED1FFFE664241D653BC40A' where login_id='cn-1420416inv'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='9D3381AA7F71B9B5415AB3455D479BA7' where login_id='cn-1410184invrob'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='9B0B41BB7E0D36CFF027DF8040794E1F' where login_id='cn-1410184inv'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='EBB28A1C982B636251FC8368B7EF3B9E' where login_id='cn-3500053invkio'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='0206A5165AE1DA26F509AAEA50D2BEB5' where login_id='cn-1420101invkio'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='A8E668C7B387944630DCBCBF3678ECC6' where login_id='cn-1420243invrob'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='4AACDF7974530A9E1164AEC403E1C3ED' where login_id='cn-1420243inv'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='AABE1453B99A5514863695D5A31679AD' where login_id='cn-1420132inv'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='4DD7D9879D6F8A71B572F2FCBDE29A21' where login_id='cn-3500053inv'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='210C0885F2AA71063FF29F9038F4970F' where login_id='cn-1410184invkio'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='743585B765D74D75741A5C024407C030' where login_id='cn-1420416invkio'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='0AE7DE135CFAC9AEA78DF7160EF2DC5F' where login_id='cn-1420101invrob'
+[INFO] [2017-08-0215:04:41][org.aisino.execute.UserImport]update sajt_user set login_pwd='F1669F34421EF50731B3261E8ACFEFF3' where login_id='cn-1420243invkio'
+[INFO] [2017-08-0409:36:47][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0409:36:47][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0409:36:47][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bey7ha15cfx3r|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bey7ha15cfx3r|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0409:37:14][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='9121020060488365XM'
+[INFO] [2017-08-0409:37:15][org.aisino.execute.UserImport]select * from sajt_org where org_no ='3230178'
+[INFO] [2017-08-0409:37:15][org.aisino.execute.UserImport]select * from sajt_org where org_no='3230178'
+[INFO] [2017-08-0409:37:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3230178invkio'
+[INFO] [2017-08-0409:37:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3230178inv'
+[INFO] [2017-08-0409:37:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3230178invrob'
+[INFO] [2017-08-0409:37:15][org.aisino.execute.UserImport]update sajt_user set login_pwd='3665353BADC8676E5837E45E8BAEB788' where login_id='cn-3230178invkio'
+[INFO] [2017-08-0409:37:15][org.aisino.execute.UserImport]update sajt_user set login_pwd='127A9794AA41081C0022F4C07772BF09' where login_id='cn-3230178inv'
+[INFO] [2017-08-0409:37:15][org.aisino.execute.UserImport]update sajt_user set login_pwd='75967A5CF55172DC8E19F54B904ADD29' where login_id='cn-3230178invrob'
+[INFO] [2017-08-0409:37:43][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0409:37:43][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0409:37:43][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bezf0dbzlu5q|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bezf0dbzlu5q|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0409:39:05][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0409:39:05][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0409:39:05][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bf16em1p8hvzk|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bf16em1p8hvzk|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0409:39:39][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0409:39:39][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0409:39:39][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bf1wn3qnva5a|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bf1wn3qnva5a|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0409:39:54][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0409:39:54][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0409:39:54][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bf27ui1jwgfub|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bf27ui1jwgfub|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0409:40:31][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0409:40:31][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0409:40:31][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bf30ke144i4yg|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bf30ke144i4yg|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0409:40:45][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0409:40:45][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0409:40:45][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bf3ba21s2qfvp|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bf3ba21s2qfvp|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0409:40:54][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0409:40:54][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0409:40:54][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bf3hy61533hva|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bf3hy61533hva|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0409:41:05][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0409:41:05][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0409:41:05][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bf3qt3faa9t3|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bf3qt3faa9t3|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0413:51:56][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0413:51:57][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0413:51:57][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bo2cla1dzmhjh|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bo2cla1dzmhjh|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0413:52:10][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0413:52:10][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0413:52:10][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bo2mno134x9v1|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bo2mno134x9v1|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0413:52:31][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0413:52:31][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0413:52:31][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bo333f1qbyzg3|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bo333f1qbyzg3|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0413:52:53][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0413:52:53][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0413:52:53][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bo3jy31omwltk|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bo3jy31omwltk|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0413:53:09][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0413:53:09][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0413:53:09][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bo3wac1feb1kk|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bo3wac1feb1kk|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0413:53:34][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0413:53:34][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0413:53:35][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bo4g3dfa72u6|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bo4g3dfa72u6|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0413:55:28][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0413:55:28][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0413:55:28][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bo6vss1uibuh9|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bo6vss1uibuh9|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0416:44:59][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0416:44:59][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0416:44:59][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bu8vsa1svs2nz|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bu8vsa1svs2nz|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0416:45:08][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='9121020060488365XM'
+[INFO] [2017-08-0416:45:08][org.aisino.execute.UserImport]select * from sajt_org where org_no ='3230178'
+[INFO] [2017-08-0416:45:08][org.aisino.execute.UserImport]select * from sajt_org where org_no='3230178'
+[INFO] [2017-08-0416:45:08][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3230178invkio'
+[INFO] [2017-08-0416:45:08][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3230178inv'
+[INFO] [2017-08-0416:45:08][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3230178invrob'
+[INFO] [2017-08-0416:46:43][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0416:46:43][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0416:46:43][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1bub3ogni0p5x|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1bub3ogni0p5x|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0416:46:53][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900324971495W'
+[INFO] [2017-08-0416:46:53][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4UK1F25C'
+[INFO] [2017-08-0416:46:53][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4UKJ0K6N'
+[INFO] [2017-08-0416:46:53][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420034'
+[INFO] [2017-08-0416:46:53][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420276'
+[INFO] [2017-08-0416:46:53][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420170'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420034'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420276'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420170'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420170inv'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420276inv'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420034invkio'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420276invrob'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420170invrob'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420276invkio'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420170invkio'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420034inv'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420034invrob'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]update sajt_user set login_pwd='A9DD6B524A0F0EB6DBA3C22BFB0A4920' where login_id='cn-1420170inv'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]update sajt_user set login_pwd='EA19D651BD031E7DD6193117FD2656E1' where login_id='cn-1420276inv'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]update sajt_user set login_pwd='0BA782F213E6DD6FFA47D00F1BC26D03' where login_id='cn-1420034invkio'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]update sajt_user set login_pwd='7F848E3E0D2F0A195E7D8C0DC49EF567' where login_id='cn-1420276invrob'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]update sajt_user set login_pwd='39C241058C9060B45976FD87FAD5DB68' where login_id='cn-1420170invrob'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]update sajt_user set login_pwd='F7D05EE3A5615220347918A88BC545CD' where login_id='cn-1420276invkio'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]update sajt_user set login_pwd='6469F1897FE8B371F4D47B6933ABBCC4' where login_id='cn-1420170invkio'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]update sajt_user set login_pwd='00B30F5E6FC877293BADD8C68DEA80E7' where login_id='cn-1420034inv'
+[INFO] [2017-08-0416:46:54][org.aisino.execute.UserImport]update sajt_user set login_pwd='123DA87CB37187A882EAFF724583D327' where login_id='cn-1420034invrob'
+[INFO] [2017-08-0713:22:05][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0713:22:05][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0713:22:05][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1fxbi2txwndue|1b604f19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1fxbi2txwndue|1b604f19, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0713:22:14][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='913202146079206716'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='913100006072048513'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1990185'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1450248'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]select * from sajt_org where org_no='1990185'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]select * from sajt_org where org_no='1450248'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1450248invrob'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1990185invrob'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1450248inv'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1450248invkio'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1990185invkio'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1990185inv'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]update sajt_user set login_pwd='D7C00182531149AE346BD2E936C0338A' where login_id='cn-1450248invrob'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]update sajt_user set login_pwd='8A34611CF95F2BE30555408D416C489A' where login_id='cn-1990185invrob'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]update sajt_user set login_pwd='4318CF8C801BC56E29DFA1C304CD9840' where login_id='cn-1450248inv'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]update sajt_user set login_pwd='0D0E305D4D5241B8E313F56B0D83BFBB' where login_id='cn-1450248invkio'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]update sajt_user set login_pwd='58CE579507F2FDA05CE2221FCF9FECC9' where login_id='cn-1990185invkio'
+[INFO] [2017-08-0713:22:15][org.aisino.execute.UserImport]update sajt_user set login_pwd='4BBD6DD9F06797000D64D58CBC6B074C' where login_id='cn-1990185inv'
+[INFO] [2017-08-0914:46:37][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0914:46:37][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0914:46:37][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1iv7x4j2qrane|68be2bc2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1iv7x4j2qrane|68be2bc2, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0914:47:07][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='9144190005998610XU'
+[ERROR] [2017-08-0914:47:07][org.aisino.execute.UserImport]Class = org.aisino.execute.UserImport; ErrorMessage = 税号 9144190005998610XU 未上线...
+[ERROR] [2017-08-0914:47:07][org.aisino.execute.UserImport]org.aisino.exception.NonExistentTaxcodeException
+	at org.aisino.execute.UserImport.exe2(UserImport.java:102)
+	at org.aisino.execute.UserImport.access$0(UserImport.java:68)
+	at org.aisino.execute.UserImport$1.run(UserImport.java:55)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:763)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:49)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:151)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:133)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:124)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+[INFO] [2017-08-0915:47:14][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0915:47:15][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0915:47:15][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1ixdvva17bd1nf|28feb3fa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1ixdvva17bd1nf|28feb3fa, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0915:47:23][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='9144190005998610XU'
+[INFO] [2017-08-0915:47:23][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91440300MA5ECJC96K'
+[INFO] [2017-08-0915:47:23][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4UQET301'
+[INFO] [2017-08-0915:47:23][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420128'
+[INFO] [2017-08-0915:47:23][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420013'
+[INFO] [2017-08-0915:47:23][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420282'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420128'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420013'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420282'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420013inv'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420128invrob'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420128inv'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420013invrob'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420282inv'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420282invkio'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420013invkio'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420282invrob'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420128invkio'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]update sajt_user set login_pwd='DFC27EEFF72964044B8D357C1F351B7C' where login_id='cn-1420128invrob'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]update sajt_user set login_pwd='42D9355982DE1F7DBEEF8BB42B8D5EE4' where login_id='cn-1420128inv'
+[INFO] [2017-08-0915:47:24][org.aisino.execute.UserImport]update sajt_user set login_pwd='F381A0CDA4582AD2B21A825FAAB447E6' where login_id='cn-1420128invkio'
+[INFO] [2017-08-0915:53:33][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-0915:53:33][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-0915:53:33][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1ixlzzln5v5bu|28feb3fa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1ixlzzln5v5bu|28feb3fa, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-0915:53:41][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='9144190005998610XU'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91440300MA5ECJC96K'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4UQET301'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420128'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420013'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420282'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420128'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420013'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420282'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420013inv'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420128invrob'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420128inv'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420013invrob'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420282inv'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420282invkio'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420013invkio'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420282invrob'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420128invkio'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]update sajt_user set login_pwd='B018F5F367DFC4BB0ABC03D849634136' where login_id='cn-1420013inv'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]update sajt_user set login_pwd='1336D85BAAF2152A0B428937DE9C6185' where login_id='cn-1420013invrob'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]update sajt_user set login_pwd='0FB212D5A3AB821701F00E3E1180D932' where login_id='cn-1420282inv'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]update sajt_user set login_pwd='FE10C2B4C4A3C6100BFA88B835943FD2' where login_id='cn-1420282invkio'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]update sajt_user set login_pwd='7E517A8A037446CF3DE0CDBF8F5F22CE' where login_id='cn-1420013invkio'
+[INFO] [2017-08-0915:53:42][org.aisino.execute.UserImport]update sajt_user set login_pwd='0F4434435C757B0ABA8382B50B0EE2A5' where login_id='cn-1420282invrob'
+[INFO] [2017-08-1016:35:46][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-1016:35:46][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-1016:35:46][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1kek53d1tfn07i|28feb3fa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1kek53d1tfn07i|28feb3fa, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-1016:36:01][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='913202146079206716'
+[INFO] [2017-08-1016:36:02][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1990186'
+[INFO] [2017-08-1016:36:02][org.aisino.execute.UserImport]select * from sajt_org where org_no='1990186'
+[INFO] [2017-08-1016:36:02][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1990186invkio'
+[INFO] [2017-08-1016:36:02][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1990186inv'
+[INFO] [2017-08-1016:36:02][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1990186invrob'
+[INFO] [2017-08-1016:36:02][org.aisino.execute.UserImport]update sajt_user set login_pwd='397EAD482A3957DD9377EE06DD440F67' where login_id='cn-1990186invkio'
+[INFO] [2017-08-1016:36:02][org.aisino.execute.UserImport]update sajt_user set login_pwd='B6045DAD9C36C6FECCD646A915556CFE' where login_id='cn-1990186inv'
+[INFO] [2017-08-1016:36:02][org.aisino.execute.UserImport]update sajt_user set login_pwd='B436DF93734C1F098432F09A6D6F3484' where login_id='cn-1990186invrob'
+[INFO] [2017-08-1415:05:38][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-1415:05:38][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-1415:05:38][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1q13moa1yzlr8h|28feb3fa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1q13moa1yzlr8h|28feb3fa, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-1415:06:00][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4UYRDK7B'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4W1P0B7W'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='914419003041155958'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91420100616403932R'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91350100611308602P'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91350100611308602P'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420083'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420141'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420158'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1960126'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1410182'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1410186'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420083'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420141'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420158'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no='1960126'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no='1410182'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_org where org_no='1410186'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410182invkio'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1960126inv'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420083invkio'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420141inv'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420158invrob'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420141invkio'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420083inv'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1960126invrob'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420083invrob'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420158inv'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410182inv'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410186invkio'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1960126invkio'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420158invkio'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410182invrob'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410186inv'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420141invrob'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410186invrob'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]update sajt_user set login_pwd='4970F70685EC97525F559147B4FD06EB' where login_id='cn-1410182invkio'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]update sajt_user set login_pwd='C93781A725D727AFBDC60FE41B7F673F' where login_id='cn-1960126inv'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]update sajt_user set login_pwd='B1AF2FB02EE75319E43CB5E46E8DA379' where login_id='cn-1420158inv'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]update sajt_user set login_pwd='45CD09D31F4DEB06057793F2519154CE' where login_id='cn-1410182inv'
+[INFO] [2017-08-1415:06:01][org.aisino.execute.UserImport]update sajt_user set login_pwd='41AB6C23E41D702B5607D4734C9669B3' where login_id='cn-1410186invkio'
+[INFO] [2017-08-1415:06:02][org.aisino.execute.UserImport]update sajt_user set login_pwd='2654C7F5361BB46933EEFCC973243A89' where login_id='cn-1420158invrob'
+[INFO] [2017-08-1415:06:02][org.aisino.execute.UserImport]update sajt_user set login_pwd='273456B16DCE6EB592421F443AC09824' where login_id='cn-1960126invkio'
+[INFO] [2017-08-1415:06:02][org.aisino.execute.UserImport]update sajt_user set login_pwd='DB9D6C56F9EDD0D3EB87ED9D98A4E86A' where login_id='cn-1420158invkio'
+[INFO] [2017-08-1415:06:02][org.aisino.execute.UserImport]update sajt_user set login_pwd='421DE63CE28A51A2272E16C7A5535820' where login_id='cn-1410182invrob'
+[INFO] [2017-08-1415:06:02][org.aisino.execute.UserImport]update sajt_user set login_pwd='49EA67688EB25D45A09E1D850CC56448' where login_id='cn-1410186inv'
+[INFO] [2017-08-1415:06:02][org.aisino.execute.UserImport]update sajt_user set login_pwd='837C298EEC4CADBF97F03B9739620EAB' where login_id='cn-1960126invrob'
+[INFO] [2017-08-1415:06:02][org.aisino.execute.UserImport]update sajt_user set login_pwd='56D65B4D509706516EDA4B74D06577CE' where login_id='cn-1410186invrob'
+[INFO] [2017-08-1415:15:56][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-1415:15:57][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-1415:15:57][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1q1gw5h1nfurq6|28feb3fa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1q1gw5h1nfurq6|28feb3fa, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-1415:16:20][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4UYRDK7B'
+[INFO] [2017-08-1415:16:20][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4W1P0B7W'
+[INFO] [2017-08-1415:16:20][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='914419003041155958'
+[INFO] [2017-08-1415:16:20][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91420100616403932R'
+[INFO] [2017-08-1415:16:20][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91350100611308602P'
+[INFO] [2017-08-1415:16:20][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91350100611308602P'
+[INFO] [2017-08-1415:16:20][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420083'
+[INFO] [2017-08-1415:16:20][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420141'
+[INFO] [2017-08-1415:16:20][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420158'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1960126'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1410182'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1410186'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420083'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420141'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420158'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_org where org_no='1960126'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_org where org_no='1410182'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_org where org_no='1410186'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410182invkio'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1960126inv'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420083invkio'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420141inv'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420158invrob'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420141invkio'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420083inv'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1960126invrob'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420083invrob'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420158inv'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410182inv'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410186invkio'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1960126invkio'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420158invkio'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410182invrob'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410186inv'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420141invrob'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1410186invrob'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]update sajt_user set login_pwd='B7EF3C2E696D892943BF4AC35DECDBF6' where login_id='cn-1420083invrob'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]update sajt_user set login_pwd='B6E641DA6F8EF3DFCC6A37C15E88F9DF' where login_id='cn-1420083invkio'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]update sajt_user set login_pwd='51A33795D6D68EF272210299C2A2B2E4' where login_id='cn-1420141inv'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]update sajt_user set login_pwd='526AA35B6489E4697D4484889F3C74CD' where login_id='cn-1420141invkio'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]update sajt_user set login_pwd='8F865B15046A4CD4EC2DFD7B0E35EA00' where login_id='cn-1420083inv'
+[INFO] [2017-08-1415:16:21][org.aisino.execute.UserImport]update sajt_user set login_pwd='3016A510988BF311415441A54D4F8A84' where login_id='cn-1420141invrob'
+[INFO] [2017-08-1513:49:50][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-1513:49:51][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-1513:49:51][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1rdu0nx167otca|28feb3fa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1rdu0nx167otca|28feb3fa, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-1513:50:33][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900079592212K'
+[ERROR] [2017-08-1513:50:34][org.aisino.execute.UserImport]Class = org.aisino.execute.UserImport; ErrorMessage = 税号 91441900079592212K 未上线...
+[ERROR] [2017-08-1513:50:34][org.aisino.execute.UserImport]org.aisino.exception.NonExistentTaxcodeException
+	at org.aisino.execute.UserImport.exe2(UserImport.java:102)
+	at org.aisino.execute.UserImport.access$0(UserImport.java:68)
+	at org.aisino.execute.UserImport$1.run(UserImport.java:55)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:763)
+	at com.jfinal.plugin.activerecord.DbPro.tx(DbPro.java:800)
+	at com.jfinal.plugin.activerecord.Db.tx(Db.java:475)
+	at org.aisino.execute.UserImport.exe(UserImport.java:49)
+	at org.aisino.swing.NewPanel.invoke(NewPanel.java:151)
+	at org.aisino.swing.NewPanel.access$1(NewPanel.java:133)
+	at org.aisino.swing.NewPanel$2$1.run(NewPanel.java:124)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+
+[INFO] [2017-08-1514:47:36][com.mchange.v2.log.MLog]MLog clients using log4j logging.
+[INFO] [2017-08-1514:47:36][com.mchange.v2.c3p0.C3P0Registry]Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+[INFO] [2017-08-1514:47:36][com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource]Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> a105x9p1rfwapvdkksat|28feb3fa, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> a105x9p1rfwapvdkksat|28feb3fa, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:oracle:thin:@10.70.12.11:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 20, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900079592212K'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91441900MA4WF1XAX2'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='91440300MA5EDRXB37'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from tbl_nsrxx where taxcode='9121020060488365XM'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420177'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420124'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_org where org_no ='1420333'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_org where org_no ='3230180'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420177'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420124'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_org where org_no='1420333'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_org where org_no='3230180'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420124invkio'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420333invrob'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3230180inv'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420333invkio'
+[INFO] [2017-08-1514:47:46][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420124invrob'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420177invkio'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420124inv'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3230180invrob'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420177invrob'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420333inv'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-1420177inv'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]select * from sajt_user where login_id='cn-3230180invkio'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]update sajt_user set login_pwd='F051D70797C733D21AF2559C9B4A042D' where login_id='cn-1420124invkio'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]update sajt_user set login_pwd='9989BC5268B64EDE58232A488585C8E2' where login_id='cn-3230180inv'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]update sajt_user set login_pwd='465751CD2A5868F281E6668EBD00C976' where login_id='cn-1420124invrob'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]update sajt_user set login_pwd='BCFF8D74B62B5E7690B4343F0CB5CD44' where login_id='cn-1420177invkio'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]update sajt_user set login_pwd='AA92BC989431DCECA97576F2D0B63733' where login_id='cn-1420124inv'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]update sajt_user set login_pwd='2B097F60CD06D494E33BD9070326C0B1' where login_id='cn-3230180invrob'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]update sajt_user set login_pwd='C62A17D9C6747D492E496314708E05ED' where login_id='cn-1420177invrob'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]update sajt_user set login_pwd='E356AA0420167FE362B44FBEAE0347F1' where login_id='cn-1420177inv'
+[INFO] [2017-08-1514:47:47][org.aisino.execute.UserImport]update sajt_user set login_pwd='5845E3130CC6AD5DF24412F801189A6A' where login_id='cn-3230180invkio'

@@ -94,7 +94,9 @@ public class UserImport {
 			LogUtil.appendLog(NewPanel.area, "★税号存在查询", false);
 
 			for (Info info : dataList) {
-				Record record = Db.findFirst("select * from tbl_nsrxx where taxcode='" + info.getTaxcode() + "'");
+				String sql = "select * from tbl_nsrxx where taxcode='" + info.getTaxcode() + "'";
+				log.info(sql);
+				Record record = Db.findFirst(sql);
 				if (record == null) {
 					LogUtil.logPrint(NewPanel.area, log, UserImport.class, "税号 " + info.getTaxcode() + " 未上线..");
 					throw new NonExistentTaxcodeException();
@@ -110,7 +112,9 @@ public class UserImport {
 			List<Info> list_org_no = new ArrayList<Info>();// 存在记录集
 			List<Info> list_org_no_notExist = new ArrayList<Info>();// 不存在记录集
 			for (Info info : dataList) {
-				Record record = Db.findFirst("select * from sajt_org where org_no ='" + info.getOrg_no() + "'");
+				String sql = "select * from sajt_org where org_no ='" + info.getOrg_no() + "'";
+				log.info(sql);
+				Record record = Db.findFirst(sql);
 				if (record != null) {
 					list_org_no.add(info);
 				} else {
@@ -149,7 +153,9 @@ public class UserImport {
 
 			// 查询org记录的org_id，并更新bean中org_id以进行user插入
 			for (Info info : dataList) {
-				Record record = Db.findFirst("select * from sajt_org where org_no='" + info.getOrg_no() + "'");
+				String sql = "select * from sajt_org where org_no='" + info.getOrg_no() + "'";
+				log.info(sql);
+				Record record = Db.findFirst(sql);
 				if(record != null) {
 					info.setOrg_id(record.getStr("id"));
 					continue;
@@ -172,18 +178,26 @@ public class UserImport {
 			}
 			NewPanel.upBar();//
 
-			// user筛选
-			Map<String, String> userMap_notExist = new HashMap<String, String>();
-			for (Map.Entry<String, String> e : userMap.entrySet()) {
-				Record record = Db.findFirst("select * from sajt_user where login_id='" + e.getKey() + "'"); 
-				if(record == null) {
-					userMap_notExist.put(e.getKey(), e.getValue());
-				}
+			// user 清理版本
+			for (Info i : dataList) {
+				String sql = "delete from sajt_user where nickname = '" + i.getOrg_no() + "'";
+				log.info(sql);
+				Db.update(sql);
 			}
-			userMap = userMap_notExist;
+			//user 不清理版本
+//			Map<String, String> userMap_notExist = new HashMap<String, String>();
+//			for (Map.Entry<String, String> e : userMap.entrySet()) {
+//				String sql = "select * from sajt_user where login_id='" + e.getKey() + "'";
+//				log.info(sql);
+//				Record record = Db.findFirst(sql); 
+//				if(record == null) {
+//					userMap_notExist.put(e.getKey(), e.getValue());
+//				}
+//			}
+//			userMap = userMap_notExist;
 			NewPanel.upBar();//
 
-			// 更新不存在的user
+			// 更新user
 			LogUtil.appendLog(NewPanel.area, "", false);
 			LogUtil.appendLog(NewPanel.area, "★开设新的用户账号", false);
 			Map<String, Info> infoMap = new HashMap<String, Info>();

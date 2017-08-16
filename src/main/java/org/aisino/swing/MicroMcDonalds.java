@@ -27,7 +27,7 @@ public class MicroMcDonalds extends JFrame {
 
 	private final static Logger log = Logger.getLogger(MicroMcDonalds.class);
 
-	public static int SCREENWIDTH = 768;
+	public static int SCREENWIDTH = 772;
 	public static int SCREENHEIGHT = 384;
 
 	private static void os() {
@@ -59,7 +59,7 @@ public class MicroMcDonalds extends JFrame {
 	public static void main(String[] args) {
 		os();
 		init();
-		setOSStyle();
+//		setOSStyle();
 
 		MicroMcDonalds demo = new MicroMcDonalds();
 		demo.setSize(SCREENWIDTH, SCREENHEIGHT);
@@ -70,6 +70,10 @@ public class MicroMcDonalds extends JFrame {
 		demo.setResizable(false);
 		demo.setIconImage(new ImageIcon(PathKit.getRootClassPath() + File.separator + PropKit.get("LOGO")).getImage());
 
+		JPanel panel = new JPanel();
+		demo.add(panel);
+		panel.setLayout(new BorderLayout());
+		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.RIGHT); // 设置选项卡在坐标
 		JPanel p1 = new NewPanel();
 		JPanel p2 = new CloseShopPanel();
@@ -77,7 +81,8 @@ public class MicroMcDonalds extends JFrame {
 		tabbedPane.add("餐厅信息导入", p1);
 		tabbedPane.add("门店关闭", p2);
 		// tabbedPane.add("门店重开", p3);
-		demo.add(tabbedPane, BorderLayout.CENTER); // 将选项卡窗体添加到 主窗体上去
+//		demo.add(tabbedPane, BorderLayout.CENTER); // 将选项卡窗体添加到 主窗体上去
+		panel.add(tabbedPane, BorderLayout.CENTER);
 
 		demo.setVisible(true);
 
